@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+}
+
+#mainBox{
+    position: relative;
+    width: 60%;
+    height: 75%;
+    background-color: white;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading{
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.fa{
+    width: 15px;
+    height: 15px;
+    font-size: 30px;
+}
+
+.fa:hover{
+    cursor: pointer;
+}
+
+#leftButton, #rightButton{
+    background-color: transparent;
+    border: none;
+    user-select: none;
+    outline: none;
+    z-index: 10;
+    margin: 10px;
+    color: white;
+}
+
+img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 1000px){
+    #mainBox{
+        width: 52%;
+        height: 60%;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    #mainBox{
+        width: 52%;
+        height: 35%;
+    }
+    .fa{
+        font-size: 20px;
+    }
+}
